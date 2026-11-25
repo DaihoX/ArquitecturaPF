@@ -1,0 +1,11 @@
+### Crear un pedido (cliente, producto, cantidad). Se registra CONFIRMADO o RECHAZADO.
+POST http://localhost:8080/api/orders
+Content-Type: application/json
+
+{ "clienteId": "C-001", "productId": 1, "quantity": 10 }
+
+### Consultar un pedido por id
+GET http://localhost:8080/api/orders/1
+
+### Total comprado por un cliente (suma de pedidos CONFIRMADO)
+GET http://localhost:8080/api/orders/clientes/C-001/total

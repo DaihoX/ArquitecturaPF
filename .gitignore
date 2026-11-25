@@ -1,0 +1,10 @@
+# Artefactos de compilación (no pueden ir en la entrega)
+target/
+build/
+*.class
+
+# Configuración local de editores y herramientas
+.idea/
+.vscode/
+.github/
+*.iml
